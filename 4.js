@@ -1,0 +1,9 @@
+process.on("exit",()=>{
+    setTimeout(()=>{
+        console.log("主事件已经停止不执行")
+    },0)
+    console.log("退出当前执行")
+})
+setTimeout(()=>{
+console.log(233)
+},500)
